@@ -17,5 +17,6 @@ In this lesson we will learn about typescript and es6 programming languages
 - this
 - lambda functions
 - prototype
+- Promises
 - modules
 - Teaching the compiler

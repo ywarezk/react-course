@@ -1,0 +1,18 @@
+{
+  "name": "@nz/01-node-npm",
+  "version": "1.0.0",
+  "description": "There are certain tools we will need to know how to work with in order to start working with React. \r In this lesson we will learn a bit about node and NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "typescript": "^3.1.6"
+  }
+}
