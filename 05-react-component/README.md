@@ -4,6 +4,7 @@ In this lesson we will learn the things we can do with a react componet.
 
 ### Lesson Plan
 
+- What is react component
 - component as a function
 - component as a class
 - render method
@@ -11,5 +12,6 @@ In this lesson we will learn the things we can do with a react componet.
 - state
 - events
 - dealing with forms
-- lifecycle hooks
+- shouldComponentUpdate
 - Pure component
+- componentDidMount, componentDidUpdate, componentWillUnmount
