@@ -13,4 +13,4 @@ create-react-app is a cli used to bootstrap a new react application.
 - lint
 - unit testing
 - build project
-- 
+- Flow
