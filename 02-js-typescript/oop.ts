@@ -83,10 +83,23 @@ class MySingleTone {
 }
 
 class Studend3<T extends string | number> {
-    constructor(grade : T) {}
+    constructor(public grade : T) {
+        // 
+    }
+
+    sayHello() {
+        if (typeof this.grade ===  'string') {
+            return 'hello'
+        }
+        if (this.grade instanceof Person) {
+
+        }
+    }
 }
 
 const studentWithStringGrade : Studend3<string> = new Studend3('A+');
+
+
 
 
 

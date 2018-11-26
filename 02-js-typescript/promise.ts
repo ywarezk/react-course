@@ -29,3 +29,39 @@ fetch('https://nztodo.herokuapp.com/api/task/?format=json') // Promise<Response>
     .then((res : Response) => { // Promise<json>
         return res.json();
     })
+    .then((json) => { // Promise<TodoTask[]>
+        return json.map((task : any) => {
+            return new TodoTask(task)
+        })
+    })
+
+// promise chaining
+
+promise1
+    .then(() => {
+        //return fetch()
+        //throw new Error();
+    })
+    .catch(() => {
+        throw new Error()
+    })
+    .then()
+    .then()
+    .then()
+    .catch(() => {
+
+    })
+
+
+    fetch('https://nztodo.herokuapp.com/api/task/?format=json') // Promise<Response>
+    .then((res : Response) => { // Promise<json>
+        return res.json();
+    })
+    .then((json) => { // Promise<TodoTask[]>
+        return json.map((task : any) => {
+            return new TodoTask(task)
+        })
+    })
+    .catch(() => {
+        return [];
+    })
