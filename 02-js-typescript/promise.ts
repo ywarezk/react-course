@@ -8,7 +8,7 @@ const myStrPromise : Promise<string> = new Promise((resolve, reject) => {
         // resolve(10);
         // resolve('dfgsdfg');
 
-        // reject(new Error('stam error'))
+        //reject(new Error('stam error'))
     }, 1000);
 });
 
@@ -27,7 +27,7 @@ promise2.then((item : void | number) => item)
 
 fetch('https://nztodo.herokuapp.com/api/task/?format=json') // Promise<Response>
     .then((res : Response) => { // Promise<json>
-        return res.json();
+        return res.json(); // Promise<any>
     })
     .then((json) => { // Promise<TodoTask[]>
         return json.map((task : any) => {
@@ -62,6 +62,6 @@ promise1
             return new TodoTask(task)
         })
     })
-    .catch(() => {
+    .catch((myErr: Error) => {        
         return [];
     })

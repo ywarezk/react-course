@@ -1,0 +1,1 @@
+import Person4Class, {Person3 as Person3Class} from './modules';
