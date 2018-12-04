@@ -13,7 +13,7 @@ function myAlert(msg) {
 }
 
 const divHelloWorld = ( // React.createElement
-<React.Fragment>
+<>
     <div id="stam" className="class-this" data-stam="hello" >
         <h1>
             hello world {rand}
@@ -55,7 +55,7 @@ const divHelloWorld = ( // React.createElement
             Click me
         </button>
     </div>
-</React.Fragment>
+</>
 );
 
 // when using JSX we have to have React
