@@ -3,7 +3,15 @@ import './App.css';
 import Child from './components/Child';
 import IlyaForm from './components/IlyaForm';
 
-class App extends Component {
+type Prop = {
+
+}
+
+type State = {
+
+}
+
+class App extends Component<Prop, State> {
   childRef: createRef<Child>;
 
   constructor(props) {
@@ -15,6 +23,18 @@ class App extends Component {
     // because our ref is not initialized
     // i want to redraw the component
     this.forceUpdate();
+  }
+
+  shouldComponentUpdate(nextProps: Prop, nextState: State): boolean {
+    // return true // 
+  }
+
+  componentDidUpdate() {
+
+  }
+
+  componentWillUnmount() {
+    
   }
 
   render() {
