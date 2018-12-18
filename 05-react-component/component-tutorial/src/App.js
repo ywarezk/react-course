@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Child from './components/Child';
 import IlyaForm from './components/IlyaForm';
+import Search from './components/Search';
 
 type Prop = {
 
@@ -49,6 +50,9 @@ class App extends Component<Prop, State> {
         <br/>
         <br/>
         <h1>{this.childRef.current ? this.childRef.current.sayHello() : null}</h1>
+
+        <br/>
+        <Search />
       </div>
     );
   }
