@@ -32,6 +32,7 @@ In this lesson we will learn how to perform routing with react and react-router 
 - the todo list contains the following components: Search, TodoList, TodoForm
 - the Search will contain a form with a text input that will cause the url to add a query param
 - The todo list will send a get request on every change of the query param and will populate a list of todo items.
+- the todo items should be located in a redux state.
 - The server accepts query for search: https://nztodo.herokuapp.com/api/task/?format=json&search=search-string
 - the TodoForm will contain a form to create a new todo task and validation of the forms. 
 - Use Formik library to create the form
